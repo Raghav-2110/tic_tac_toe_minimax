@@ -19,10 +19,15 @@ int main() {
                 if (event.mouseButton.button == sf::Mouse::Left) {
                     if ((0 < event.mouseButton.x) && (event.mouseButton.x < WINDOW_SIZE)
                     && (0 < event.mouseButton.y) && (event.mouseButton.y < WINDOW_SIZE)) {
-                        ;
                     }
                 }
             }
+
+            if(event.type == sf::Event::EventType::KeyPressed) {
+                if(event.key.code == sf::Keyboard::R) {
+                }
+            }
+
         }
 
         window.display();
