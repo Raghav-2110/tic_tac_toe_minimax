@@ -13,7 +13,7 @@ public:
     static sf::Texture o;
     static sf::Texture board;
 
-    static sf::Texture loadTexture(const std::string& filename);
+    static sf::Texture loadTexture(const std::string &filename);
 };
 
 
