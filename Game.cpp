@@ -11,7 +11,7 @@ Game::Game() {
 void Game::restart() {
     pieces.clear();
     squares.clear();
-    notGameOver = false;
+    notGameOver = true;
     turn = true;
     for(char &c : bitBoard) {
         c = '0';
@@ -40,15 +40,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 0);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 0);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(400, 0);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(400, 0);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -60,15 +60,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(400, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(400, 200);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -80,15 +80,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 400);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(400, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(400, 400);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -100,15 +100,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(0, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(0, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(0, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(0, 400);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -120,15 +120,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(200, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(200, 400);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -140,15 +140,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(400, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(400, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(400, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(400, 400);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -160,15 +160,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(400, 400);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(400, 400);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -180,15 +180,15 @@ int Game::win() {
         square1.setFillColor(sf::Color::Green);
         squares.push_back(square1);
 
-        square1.setPosition(200, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square2.setPosition(200, 200);
+        square2.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square2.setFillColor(sf::Color::Green);
+        squares.push_back(square2);
 
-        square1.setPosition(200, 200);
-        square1.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
-        square1.setFillColor(sf::Color::Green);
-        squares.push_back(square1);
+        square3.setPosition(200, 200);
+        square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
+        square3.setFillColor(sf::Color::Green);
+        squares.push_back(square3);
 
         notGameOver = false;
     }
@@ -197,13 +197,13 @@ int Game::win() {
 }
 
 void Game::draw(sf::RenderTarget &target, sf::RenderStates states) const {
+    for(const sf::RectangleShape &square : squares) {
+        target.draw(square);
+    }
+
     target.draw(board);
 
     for(const Piece &piece : pieces) {
         target.draw(piece);
-    }
-
-    for(const sf::RectangleShape &square : squares) {
-        target.draw(square);
     }
 }
