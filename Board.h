@@ -10,7 +10,7 @@
 class Board : public sf::Drawable {
 public:
     Board();
-    void draw(sf::RenderTarget &target, sf::RenderStates &states);
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
 private:
     sf::Sprite sprite;
