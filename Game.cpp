@@ -185,7 +185,7 @@ int Game::win() {
         square2.setFillColor(sf::Color::Green);
         squares.push_back(square2);
 
-        square3.setPosition(200, 200);
+        square3.setPosition(0, 400);
         square3.setSize(sf::Vector2f(SQUARE_SIZE, SQUARE_SIZE));
         square3.setFillColor(sf::Color::Green);
         squares.push_back(square3);
@@ -206,4 +206,13 @@ void Game::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     for(const Piece &piece : pieces) {
         target.draw(piece);
     }
+}
+
+void Game::computerPlay() {
+    location bestMove = getBestMove(bitBoard);
+    newPiece(bestMove.col, bestMove.row);
+}
+
+bool Game::getTurn() const {
+    return turn;
 }

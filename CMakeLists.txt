@@ -10,6 +10,9 @@ add_executable(tic_tac_toe_minimax main.cpp
         Board.cpp
         Board.h
         Game.cpp
-        Game.h)
+        Game.h
+        MiniMax.cpp
+        MiniMax.h
+)
 find_package(SFML 2.6 COMPONENTS system window graphics audio network REQUIRED)
 target_link_libraries(tic_tac_toe_minimax sfml-system sfml-window sfml-graphics sfml-audio sfml-network)

@@ -11,13 +11,16 @@
 #include <vector>
 #include "Board.h"
 #include "Piece.h"
+#include "MiniMax.h"
 
 class Game : public sf::Drawable {
 public:
     Game();
     void restart();
     void newPiece(int x, int y);
-    void draw(sf::RenderTarget &target, sf::RenderStates states) const;
+    void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+    void computerPlay();
+    bool getTurn() const;
 
 private:
     int win();

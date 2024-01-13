@@ -18,6 +18,10 @@ int main() {
                 window.close();
             }
 
+            if(!game.getTurn()) {
+                game.computerPlay();
+            }
+
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (event.mouseButton.button == sf::Mouse::Left) {
                     if ((0 < event.mouseButton.x) && (event.mouseButton.x < WINDOW_SIZE)
@@ -32,7 +36,6 @@ int main() {
                     game.restart();
                 }
             }
-
         }
 
         window.clear(sf::Color(16, 16,16, 255));
