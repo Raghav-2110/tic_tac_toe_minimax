@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.26)
 project(tic_tac_toe_minimax)
 set(CMAKE_CXX_STANDARD 17)
-include_directories(${SFML_INCLUDE_DIRS})
+# include_directories(${SFML_INCLUDE_DIRS})
+include_directories(./sfml/2.6.1/include/)
 add_executable(tic_tac_toe_minimax main.cpp
         Texture.cpp
         Texture.h
