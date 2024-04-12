@@ -1,3 +1,0 @@
-/Users/mba/myCode/tic-tac-toe-minimax/build/CMakeFiles/tic_tac_toe_minimax.dir
-/Users/mba/myCode/tic-tac-toe-minimax/build/CMakeFiles/edit_cache.dir
-/Users/mba/myCode/tic-tac-toe-minimax/build/CMakeFiles/rebuild_cache.dir
