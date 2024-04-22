@@ -48,3 +48,8 @@ This is a simple implementation of the classic Tic-Tac-Toe game written in C++17
     ./tic_tac_toe_minimax
     ```
 
+## How to play
+
+- Choose the square.
+- Click mouse.
+- Press r to restart the game.
