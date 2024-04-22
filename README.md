@@ -48,8 +48,3 @@ This is a simple implementation of the classic Tic-Tac-Toe game written in C++17
     ./tic_tac_toe_minimax
     ```
 
-## How to Play
-
-- When the game starts, you will be presented with a menu where you can choose to play against the AI.
-- Click on a cell in the grid to make your move.
-- The game will automatically detect when a player wins or if the game ends in a draw.
